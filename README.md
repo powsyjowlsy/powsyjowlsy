@@ -23,20 +23,13 @@ Rather than walking the traditional path of rote syntax memorization, I position
 
 ### Engineering Approach: Intent, Direction & Verification
 
-```
-   [ Creative Vision & Scope ]  <── Human: Identifying the real-world problem
-                │
-                ▼
-  [ System Architecture & Constraints ]  <── Human: Designing protocols, schemas & security
-                │
-                ▼
-    [ AI Synthesis & Rapid Scaffolding ]  <── AI: Generating syntax across Java, Python, JS, Bash
-                │
-                ▼
- [ Empirical Verification & Packet Telemetry ]  <── Human: Wireshark, debuggers, logs & runtime tests
-                │
-                ▼
-       [ High-Integrity System ]
+```mermaid
+flowchart TD
+    A["<b>1. Problem Conception & Vision</b><br/>Identify real-world requirements and scope"] --> B["<b>2. Architecture & Contract Design</b><br/>Define protocols, schemas, and security boundaries"]
+    B --> C["<b>3. AI-Assisted Implementation</b><br/>Rapid syntax synthesis across Java, Python, TypeScript, Bash"]
+    C --> D{"<b>4. Empirical Verification</b><br/>Wireshark traces, AST review, debuggers & logs"}
+    D -- "Anomalies / Failures" --> C
+    D -- "Passes Verification" --> E(["<b>5. Production-Ready Deployment</b>"])
 ```
 
 1. **Architectural Intent**: I define the problem, boundaries, and expected behavior.
