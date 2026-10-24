@@ -1,24 +1,24 @@
 # Julz Torralba
-**Network Systems • AI-Assisted Engineering**
+**Network Systems & Infrastructure • Concurrent Software Engineering**
 
 ---
 
 ### About Me
-I am an Information Technology student specializing in network infrastructure and systems security.
+I am an Information Technology student specializing in network infrastructure, protocol architecture, and systems security.
 
-I design, build, and deploy software across diverse stacks—Java, Python, JavaScript, and Bash—by combining foundational systems principles with disciplined AI-assisted engineering. 
+My work spans low-level network communications, concurrent systems programming, and hardware-integrated software development. I design and implement systems ranging from raw socket-level HTTP servers and packet-level protocol modifiers to multi-threaded Java server engines and point-of-sale applications.
 
-Rather than relying on rote syntax memorization, my focus is on system architecture, protocol design, and knowing how components interact under the hood. I direct calibrated AI workflows to handle syntax synthesis, while I govern the design, logic, and verification standards.
+I approach software engineering with an architecture-first mindset: prioritizing data lifecycles, protocol standards, and empirical verification over syntax memorization. I actively direct and govern calibrated AI workflows to accelerate polyglot implementation while maintaining strict engineering rigor.
 
 ---
 
-### Engineering Standards & AI Governance
-Unregulated AI generation often yields fragile, superficial code. I prevent this by enforcing strict engineering governance over my development environment:
+### Systems Engineering Standards & Governance
+Unregulated AI code generation often introduces architectural defects, race conditions, and unmaintainable patterns. To guarantee operational stability, my development environment operates under strict technical controls:
 
-- **Enforced Architectural Planning**: My AI is constrained by strict rules—it cannot generate code without a documented implementation plan, complete data-lifecycle tracing, and empirical root-cause analysis.
-- **Grounding in Systems & Networking**: With a background in packet telemetry (Wireshark), routing topologies (Cisco Packet Tracer, GNS3), and firewall architecture (pfSense), I evaluate software against real system state, socket lifecycles, and network traffic rather than surface execution.
-- **Supervised Delegation**: I treat AI as a high-speed junior developer. It provides rapid scaffolding across languages I am actively exploring, while I inspect code structures, handle edge cases, and maintain strict quality standards.
-- **Accelerated Learning**: This disciplined workflow accelerates my technical breadth across computer science, system administration, and disciplines beyond IT without sacrificing structural rigor.
+- **Mandatory Architectural Planning**: Implementation never begins without prior schema contracts, data-lifecycle mapping, and formal boundary definition.
+- **Empirical Systems & Telemetry Audits**: Software is validated against physical system behavior, socket lifecycles, and network telemetry (Wireshark) rather than surface execution, ensuring integrity across the transport, network, and application layers.
+- **Thread Safety & State Verification**: In concurrent environments (such as multi-threaded region-scheduled architectures), logic is rigorously audited for race conditions, thread isolation, and memory persistence.
+- **Supervised Code Synthesis**: AI functions strictly as a high-velocity synthesis tool under active human supervision. All generated AST structures, dependency trees, and logic branches undergo human code review and edge-case testing.
 
 ---
 
@@ -26,26 +26,27 @@ Unregulated AI generation often yields fragile, superficial code. I prevent this
 
 ```mermaid
 flowchart TD
-    A["<b>1. Problem & Architecture</b><br/>Define requirements, protocols, and system boundaries"] --> B["<b>2. Guided AI Implementation</b><br/>Rapid syntax synthesis across Java, Python, JS, Bash"]
-    B --> C{"<b>3. Empirical Verification</b><br/>Wireshark traces, runtime logs, AST review, and debugging"}
-    C -- "Issues Found" --> B
-    C -- "Verified & Stable" --> D(["<b>4. Reliable Deployment</b>"])
+    A["<b>1. Architecture & Protocol Design</b><br/>Define schemas, socket contracts, and security boundaries"] --> B["<b>2. Supervised Code Generation</b><br/>Targeted syntax synthesis across Java, Python, TypeScript, Bash"]
+    B --> C{"<b>3. Empirical Systems Audit</b><br/>Wireshark telemetry, runtime logs, AST review, and thread checks"}
+    C -- "Defects Detected" --> B
+    C -- "Verified & Stable" --> D(["<b>4. Verified Production Release</b>"])
 ```
 
 ---
 
-### Technical Focus
+### Core Technical Focus
 
-#### Networking & Systems
-- **Packet Telemetry**: Deep packet inspection, traffic troubleshooting, and flow diagnostics in **Wireshark**.
-- **Network Topologies**: Subnetting, multi-area OSPF, VLAN trunks, and ACLs in **Cisco Packet Tracer** and **GNS3**.
-- **Perimeter Defense**: Stateful traffic filtering, interface routing, and NAT on **pfSense** and **OPNsense**.
-- **Operating Systems**: Linux server administration (Debian, Ubuntu), bash scripting, and Windows environment management.
+#### Network Systems & Telemetry
+- **Protocol Dissection & Traffic Analysis**: Deep packet inspection, flow reconstruction, and anomaly diagnostics in **Wireshark**.
+- **Network Topologies & Routing**: Subnetting, multi-area OSPF, 802.1Q VLAN trunking, NAT/PAT, and ACL security in **Cisco Packet Tracer** and **GNS3**.
+- **Perimeter Defense**: Stateful packet filtering, interface routing, and gateway configurations on **pfSense** and **OPNsense**.
+- **Socket & Protocol Programming**: Low-level HTTP servers engineered from raw sockets, network stress-test bot frameworks, and packet-level manipulation tools.
 
-#### Software & Development (AI-Assisted)
-- Building backend services, utility tools, and automation in **Java**, **JavaScript/TypeScript**, **Python**, and **Bash**.
-- Configuring custom agent instructions, deterministic tool workflows, and prompt context architectures.
-- Moving from system architecture to verified implementation with high velocity.
+#### Concurrent Systems & Software Engineering
+- **High-Performance Multi-Threading**: Concurrent server plugin architecture engineered for region-scheduled looper threads (Folia), eliminating blocking operations and single-thread bottlenecks.
+- **Data Persistence & State Lifecycles**: Custom serialization, persistent data containers (PDC), transactional storage systems, and database bridging (MySQL, PostgreSQL).
+- **Hardware-Integrated Applications**: Desktop and responsive POS software supporting ESC/POS thermal receipt formatting, local hardware drivers, and local persistence.
+- **Systems Administration**: Linux server environments (Debian, Ubuntu), bash automation, and Windows administration.
 
 ---
 
@@ -61,9 +62,9 @@ flowchart TD
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
 
-#### Languages & Development
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+#### Languages & Systems
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -73,7 +74,7 @@ flowchart TD
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
-#### Tools & Platforms
+#### Tooling & Platforms
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -81,11 +82,11 @@ flowchart TD
 
 ---
 
-### Repositories
-All my active projects, network labs, and tools are published directly in my public repositories. Explore my pinned repositories below to inspect the code, configurations, and topology documentation.
+### Repositories & Implementations
+All active implementations, network topologies, and systems tools are documented directly in my public repositories. Explore the pinned repositories below to inspect architecture specifications, network configurations, and source code.
 
 ---
 
 <p align="center">
-  <sub>Driven by curiosity. Grounded in systems. Built with care.</sub>
+  <sub>Architectural integrity. Empirical verification. Deliberate engineering.</sub>
 </p>
