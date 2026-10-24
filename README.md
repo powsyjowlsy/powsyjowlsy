@@ -5,64 +5,82 @@
 # Julz Torralba
 **Systems & Network Infrastructure • Full-Stack Software Engineering**
 
+> [!NOTE]
+> Focused on system architecture, protocol integrity, and verified execution. Combining foundational systems administration with disciplined AI-assisted engineering to build robust, multi-discipline software.
+
 ---
 
 ### About Me
 I am an Information Technology student specializing in network infrastructure, protocol architecture, and systems security.
 
-My engineering work spans the full software and infrastructure stack: from low-level network communications and concurrent Java backends to client-secured web architectures and hardware-integrated desktop systems. 
+My engineering work spans the full spectrum of software and infrastructure: from low-level network communications and concurrent Java backends to client-secured web applications and hardware-integrated desktop systems. 
 
-Rather than focusing on rote syntax memorization, my practice centers on architectural integrity, protocol adherence, and empirical verification. I actively direct calibrated AI workflows to accelerate polyglot development across Java, Python, JavaScript, and Bash while maintaining strict systems-level standards.
-
----
-
-### Systems Engineering Standards & Governance
-Unregulated AI code generation often introduces architectural defects, race conditions, and unmaintainable patterns. To guarantee operational stability, my development environment operates under strict technical controls:
-
-- **Mandatory Architectural Planning**: Implementation never begins without prior schema contracts, data-lifecycle mapping, and formal boundary definition.
-- **Empirical Systems & Telemetry Audits**: Software is validated against physical system behavior, socket lifecycles, and network telemetry (Wireshark) rather than surface execution, ensuring integrity across the transport, network, and application layers.
-- **Concurrency & State Verification**: In multi-threaded environments (such as region-scheduled server architectures), logic is rigorously audited for race conditions, thread isolation, and memory persistence.
-- **Defense-in-Depth & Client Data Hygiene**: Web applications are engineered with strict client-side security standards—including zero-DOM initial footprints, encrypted runtime vaults, and just-in-time DOM hydration.
-- **Supervised Code Synthesis**: AI functions strictly as a high-velocity synthesis tool under active human supervision. All generated AST structures, dependency trees, and logic branches undergo human code review and edge-case testing.
+Rather than focusing on rote syntax memorization, my practice centers on architectural design, protocol compliance, and empirical verification. I actively govern calibrated AI workflows to accelerate polyglot development across Java, Python, JavaScript, and Bash while maintaining strict systems-level standards.
 
 ---
 
 ### Engineering Workflow
 
+My development lifecycle operates as a closed-loop engineering pipeline, ensuring software is structurally verified against live system state and network telemetry before deployment:
+
 ```mermaid
-flowchart TD
-    A["<b>1. Architecture & Protocol Design</b><br/>Define schemas, socket contracts, and security boundaries"] --> B["<b>2. Supervised Code Generation</b><br/>Targeted syntax synthesis across Java, Python, TypeScript, Bash"]
-    B --> C{"<b>3. Empirical Systems Audit</b><br/>Wireshark telemetry, runtime logs, AST review, and thread checks"}
-    C -- "Defects Detected" --> B
-    C -- "Verified & Stable" --> D(["<b>4. Verified Production Release</b>"])
+flowchart LR
+    A["<b>01 / Specification</b><br/><sub>Schemas & Contracts</sub>"]
+    --> B["<b>02 / Graph Audit</b><br/><sub>AST & Call Paths</sub>"]
+    --> C["<b>03 / Synthesis</b><br/><sub>Constrained Code</sub>"]
+    --> D{"<b>04 / Telemetry</b><br/><sub>Packets & Threads</sub>"}
+    
+    D -- "Verified" --> E(["<b>05 / Production</b><br/><sub>Hardened Release</sub>"])
+    D -. "Defect Found" .-> B
+
+    style A fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#c9d1d9
+    style B fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#c9d1d9
+    style C fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#c9d1d9
+    style D fill:#161b22,stroke:#388bfd,stroke-width:2px,color:#58a6ff
+    style E fill:#161b22,stroke:#2ea043,stroke-width:2px,color:#3fb950
+    linkStyle default stroke:#8b949e,stroke-width:1.5px
 ```
+
+1. **Specification**: Define formal schemas, data contracts, and protocol boundaries before implementation.
+2. **Graph Audit**: Trace call hierarchies, dependency trees, and refactoring blast radiuses via AST analysis.
+3. **Synthesis**: Direct AI code generation under strict architectural constraints, eliminating premature assumptions.
+4. **Telemetry**: Validate logic against physical packet behavior in Wireshark, thread isolation, and runtime logs.
+5. **Production**: Deploy hardened releases only after all data contracts pass empirical verification.
 
 ---
 
-### Core Technical Focus
+### Special Features Developed Across Projects
 
-#### Network Systems & Telemetry
-- **Protocol Dissection & Traffic Analysis**: Deep packet inspection, flow reconstruction, and anomaly diagnostics in **Wireshark**.
-- **Network Topologies & Routing**: Subnetting, multi-area OSPF, 802.1Q VLAN trunking, NAT/PAT, and ACL security in **Cisco Packet Tracer** and **GNS3**.
-- **Perimeter Defense**: Stateful packet filtering, interface routing, and gateway configurations on **pfSense** and **OPNsense**.
-- **Socket & Protocol Programming**: Low-level HTTP servers engineered from raw sockets, network stress-test bot frameworks, and packet-level manipulation tools.
+#### Network Systems & Protocol Engineering
+- **Raw Socket Web Server**: Engineered an HTTP web server from scratch on raw TCP sockets, handling manual HTTP request parsing and response headers (`ITE183`).
+- **Packet-Level Protocol Modifiers**: Developed low-level packet interception, custom payload injection, and automated network stress-test bot frameworks (`ProtocolLib`, `PacketEvents`, `Stresstest Bots`).
+- **Enterprise Routing Topologies**: Designed multi-subnet architectures with multi-area OSPF, 802.1Q VLAN trunking, NAT/PAT, and ACL perimeter security in Cisco Packet Tracer and GNS3 (`ITN101`-`ITN111`).
+- **Deep Packet Telemetry**: Diagnosed TCP handshakes, protocol anomalies, and flow reconstructions using Wireshark.
 
-#### Concurrent Systems & Backend Engineering
-- **High-Performance Multi-Threading**: Concurrent server architecture engineered for region-scheduled looper threads (Folia), eliminating blocking operations and single-thread bottlenecks.
-- **Data Persistence & State Lifecycles**: Custom serialization, persistent data containers (PDC), transactional storage systems, and database bridging (MySQL, PostgreSQL).
-- **Systems Administration**: Linux server environments (Debian, Ubuntu), bash automation, and Windows administration.
+#### High-Concurrency Server Architecture
+- **Folia Multi-Threaded Concurrency**: Engineered server plugins for region-scheduled looper threads, enforcing cross-region thread safety and asynchronous I/O to prevent server deadlocks (`Infinity-Cave-Plugin`).
+- **Transactional State Persistence**: Built custom serialization using Persistent Data Containers (PDC) and HikariCP connection pooling for cross-server database synchronization.
+- **Autonomous Auto-Patchers**: Developed chunk-load listeners that dynamically scan and repair structure NBT configurations at runtime on their respective regional threads.
 
-#### Frontend Engineering & Client-Side Security
-- **Defense-in-Depth Web Architecture**: Zero-DOM plaintext exposure, client-side data-at-rest obfuscation, and Just-In-Time (JIT) dynamic DOM hydration.
-- **Anti-Tampering & Inspection Shields**: Intercepting DevTools shortcuts (`F12`, `Ctrl+U`, `Ctrl+Shift+I/J/C`), context menu controls, and obfuscated state gates.
-- **Interactive Web Systems**: High-performance HTML5 Canvas physics simulations, Web Audio API controllers, and responsive cross-device interfaces.
-- **Hardware-Integrated Applications**: Desktop POS software supporting ESC/POS thermal receipt formatting, local hardware drivers, and local persistence.
+#### Client-Side Security & Frontend Systems
+- **Zero-DOM Footprint & JIT Hydration**: Engineered web architectures where sensitive markup is absent from initial DOM, bundling data into obfuscated runtime vaults decoded dynamically on state transitions (`Happy Motmot`).
+- **Anti-Tampering & DevTools Shields**: Implemented client shields intercepting DevTools shortcuts (`F12`, `Ctrl+U`), context menu locking, and obfuscated hex logic gates.
+- **Interactive Multimedia & Physics**: Developed high-performance HTML5 Canvas particle engines (sinusoidal swaying, 3D tumbling physics) and custom Web Audio API controllers.
+
+#### Hardware-Integrated Desktop Applications
+- **Thermal Printer Spooling**: Integrated ESC/POS 58mm monospace thermal receipt formatting and silent native printer spooling into standalone Point-of-Sale desktop software (`Tonari-POS`).
+- **Multi-Device Local Sync**: Engineered cross-device POS architectures allowing simultaneous desktop and mobile smartphone operation over local Wi-Fi with zero external dependencies.
+- **Real-Time Operational Systems**: Built automatic stock deduction engines, Kitchen Display System (KDS) order queues, and automated CSV sales export reporting.
+
+#### Applied Simulation & Ballistic Mathematics
+- **2-Pass True-Arc Trajectory Solvers**: Developed long-range ballistic calculation engines modeling 3D bullet arcs, multi-band stepped ballistic coefficients, and dynamic air density (`ATragExtension`).
+- **Environmental Drift & Raycasting**: Implemented real-time wind staleness watchers, ASL-to-ASL raycasting with multi-hit geometry filtering, and Coriolis/Eötvös physics modeling across custom terrain.
 
 ---
 
 ### Tech Stack
 
-#### Networking & Infrastructure
+#### Networking & Systems
 ![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 ![pfSense](https://img.shields.io/badge/pfSense-000000?style=for-the-badge&logo=pfsense&logoColor=white)
