@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" width="100%" height="100%">
+  <defs>
+    <!-- Forward Arrow Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#58a6ff" />
+    </marker>
+    <!-- Return Feedback Arrow Marker -->
+    <marker id="arrow-return" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f85149" />
+    </marker>
+  </defs>
+
+  <style>
+    .header-tag { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; fill: #8b949e; letter-spacing: 1.5px; }
+    .header-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 600; fill: #58a6ff; letter-spacing: 1px; }
+    .step-tag { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1px; }
+    .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; }
+    .card-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 11px; line-height: 1.4; fill: #8b949e; }
+    .card-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 10px; fill: #6e7681; }
+    .return-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 10.5px; font-weight: 600; fill: #f85149; letter-spacing: 0.5px; }
+  </style>
+
+  <!-- Canvas Frame -->
+  <rect width="960" height="250" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Top Header Bar -->
+  <text x="40" y="31" class="header-tag">CLOSED-LOOP ENGINEERING LIFECYCLE</text>
+  <text x="920" y="31" text-anchor="end" class="header-sub">MULTI-PILLAR ARCHITECTURE</text>
+  <line x1="40" y1="42" x2="920" y2="42" stroke="#21262d" stroke-width="1"/>
+
+  <!-- CARD 1: SPECIFICATION -->
+  <g transform="translate(40, 56)">
+    <rect width="156" height="122" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="14" y="24" class="step-tag" fill="#8b949e">01 / SPECIFICATION</text>
+    <text x="14" y="46" class="card-title" fill="#f0f6fc">System Contracts</text>
+    <text x="14" y="68" class="card-desc">Protocol standards</text>
+    <text x="14" y="84" class="card-desc">Interface schemas</text>
+    <text x="14" y="104" class="card-sub">Data lifecycle bounds</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 198 117 L 217 117" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- CARD 2: GRAPH AUDIT -->
+  <g transform="translate(221, 56)">
+    <rect width="156" height="122" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="14" y="24" class="step-tag" fill="#8b949e">02 / GRAPH AUDIT</text>
+    <text x="14" y="46" class="card-title" fill="#f0f6fc">AST &amp; Call Graphs</text>
+    <text x="14" y="68" class="card-desc">Callers &amp; callees trace</text>
+    <text x="14" y="84" class="card-desc">Blast radius analysis</text>
+    <text x="14" y="104" class="card-sub">Dependency safety check</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 379 117 L 398 117" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- CARD 3: SYNTHESIS -->
+  <g transform="translate(402, 56)">
+    <rect width="156" height="122" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="14" y="24" class="step-tag" fill="#8b949e">03 / SYNTHESIS</text>
+    <text x="14" y="46" class="card-title" fill="#f0f6fc">Constrained Code</text>
+    <text x="14" y="68" class="card-desc">Supervised generation</text>
+    <text x="14" y="84" class="card-desc">Strict system boundaries</text>
+    <text x="14" y="104" class="card-sub">Zero unverified logic</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <path d="M 560 117 L 579 117" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- CARD 4: TELEMETRY VERIFICATION (Active Accent) -->
+  <g transform="translate(583, 56)">
+    <rect width="156" height="122" rx="8" fill="#161b22" stroke="#388bfd" stroke-width="2"/>
+    <text x="14" y="24" class="step-tag" fill="#58a6ff">04 / VERIFICATION</text>
+    <text x="14" y="46" class="card-title" fill="#58a6ff">Empirical Telemetry</text>
+    <text x="14" y="68" class="card-desc" fill="#c9d1d9">Wireshark packet audit</text>
+    <text x="14" y="84" class="card-desc" fill="#c9d1d9">Thread-safety checks</text>
+    <text x="14" y="104" class="card-sub" fill="#8b949e">Physical runtime state</text>
+  </g>
+
+  <!-- Arrow 4 -> 5 -->
+  <path d="M 741 117 L 760 117" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- CARD 5: PRODUCTION (Success Accent) -->
+  <g transform="translate(764, 56)">
+    <rect width="156" height="122" rx="8" fill="#161b22" stroke="#2ea043" stroke-width="2"/>
+    <text x="14" y="24" class="step-tag" fill="#3fb950">05 / PRODUCTION</text>
+    <text x="14" y="46" class="card-title" fill="#3fb950">Hardened Release</text>
+    <text x="14" y="68" class="card-desc" fill="#c9d1d9">Verified operational state</text>
+    <text x="14" y="84" class="card-desc" fill="#c9d1d9">Zero race conditions</text>
+    <text x="14" y="104" class="card-sub" fill="#8b949e">Documented delivery</text>
+  </g>
+
+  <!-- Feedback Loop Path (From bottom of Card 4 back into Card 2) -->
+  <path d="M 661 178 L 661 206 Q 661 216 651 216 L 309 216 Q 299 216 299 206 L 299 183" 
+        stroke="#f85149" stroke-width="1.6" stroke-dasharray="4 3" fill="none" marker-end="url(#arrow-return)"/>
+
+  <!-- Feedback Tag Pill -->
+  <g transform="translate(480, 216)">
+    <rect x="-95" y="-12" width="190" height="24" rx="12" fill="#161b22" stroke="#f85149" stroke-width="1.2"/>
+    <text x="0" y="4" text-anchor="middle" class="return-text">Defect Found: Re-Audit &amp; Trace</text>
+  </g>
+</svg>

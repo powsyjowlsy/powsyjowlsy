@@ -23,23 +23,9 @@ Rather than focusing on rote syntax memorization, my practice centers on archite
 
 My development lifecycle operates as a closed-loop engineering pipeline, ensuring software is structurally verified against live system state and network telemetry before deployment:
 
-```mermaid
-flowchart LR
-    A["<b>01 / Specification</b><br/><sub>Schemas & Contracts</sub>"]
-    --> B["<b>02 / Graph Audit</b><br/><sub>AST & Call Paths</sub>"]
-    --> C["<b>03 / Synthesis</b><br/><sub>Constrained Code</sub>"]
-    --> D{"<b>04 / Telemetry</b><br/><sub>Packets & Threads</sub>"}
-    
-    D -- "Verified" --> E(["<b>05 / Production</b><br/><sub>Hardened Release</sub>"])
-    D -. "Defect Found" .-> B
-
-    style A fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#c9d1d9
-    style B fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#c9d1d9
-    style C fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#c9d1d9
-    style D fill:#161b22,stroke:#388bfd,stroke-width:2px,color:#58a6ff
-    style E fill:#161b22,stroke:#2ea043,stroke-width:2px,color:#3fb950
-    linkStyle default stroke:#8b949e,stroke-width:1.5px
-```
+<p align="center">
+  <img src="assets/engineering-workflow.svg" alt="Engineering Workflow Pipeline" width="100%" />
+</p>
 
 1. **Specification**: Define formal schemas, data contracts, and protocol boundaries before implementation.
 2. **Graph Audit**: Trace call hierarchies, dependency trees, and refactoring blast radiuses via AST analysis.
