@@ -32,23 +32,23 @@
   <g transform="translate(40, 56)">
     <rect width="156" height="122" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
     <text x="14" y="24" class="step-tag" fill="#8b949e">01 / SPECIFICATION</text>
-    <text x="14" y="46" class="card-title" fill="#f0f6fc">System Contracts</text>
-    <text x="14" y="68" class="card-desc">Protocol standards</text>
-    <text x="14" y="84" class="card-desc">Interface schemas</text>
-    <text x="14" y="104" class="card-sub">Data lifecycle bounds</text>
+    <text x="14" y="46" class="card-title" fill="#f0f6fc">Architecture &amp; Design</text>
+    <text x="14" y="68" class="card-desc">Functional requirements</text>
+    <text x="14" y="84" class="card-desc">Data models &amp; schemas</text>
+    <text x="14" y="104" class="card-sub">Interface contracts</text>
   </g>
 
   <!-- Arrow 1 -> 2 -->
   <path d="M 198 117 L 217 117" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
 
-  <!-- CARD 2: GRAPH AUDIT -->
+  <!-- CARD 2: STRUCTURAL AUDIT -->
   <g transform="translate(221, 56)">
     <rect width="156" height="122" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-    <text x="14" y="24" class="step-tag" fill="#8b949e">02 / GRAPH AUDIT</text>
-    <text x="14" y="46" class="card-title" fill="#f0f6fc">AST &amp; Call Graphs</text>
-    <text x="14" y="68" class="card-desc">Callers &amp; callees trace</text>
-    <text x="14" y="84" class="card-desc">Blast radius analysis</text>
-    <text x="14" y="104" class="card-sub">Dependency safety check</text>
+    <text x="14" y="24" class="step-tag" fill="#8b949e">02 / STRUCTURAL AUDIT</text>
+    <text x="14" y="46" class="card-title" fill="#f0f6fc">Structural Analysis</text>
+    <text x="14" y="68" class="card-desc">Dependency mapping</text>
+    <text x="14" y="84" class="card-desc">Call hierarchy &amp; impact</text>
+    <text x="14" y="104" class="card-sub">Pre-refactor blast radius</text>
   </g>
 
   <!-- Arrow 2 -> 3 -->
@@ -58,23 +58,23 @@
   <g transform="translate(402, 56)">
     <rect width="156" height="122" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
     <text x="14" y="24" class="step-tag" fill="#8b949e">03 / SYNTHESIS</text>
-    <text x="14" y="46" class="card-title" fill="#f0f6fc">Constrained Code</text>
-    <text x="14" y="68" class="card-desc">Supervised generation</text>
-    <text x="14" y="84" class="card-desc">Strict system boundaries</text>
-    <text x="14" y="104" class="card-sub">Zero unverified logic</text>
+    <text x="14" y="46" class="card-title" fill="#f0f6fc">Governed Synthesis</text>
+    <text x="14" y="68" class="card-desc">Rule-constrained coding</text>
+    <text x="14" y="84" class="card-desc">Modular implementation</text>
+    <text x="14" y="104" class="card-sub">Zero premature guessing</text>
   </g>
 
   <!-- Arrow 3 -> 4 -->
   <path d="M 560 117 L 579 117" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
 
-  <!-- CARD 4: TELEMETRY VERIFICATION (Active Accent) -->
+  <!-- CARD 4: VERIFICATION (Active Accent) -->
   <g transform="translate(583, 56)">
     <rect width="156" height="122" rx="8" fill="#161b22" stroke="#388bfd" stroke-width="2"/>
     <text x="14" y="24" class="step-tag" fill="#58a6ff">04 / VERIFICATION</text>
-    <text x="14" y="46" class="card-title" fill="#58a6ff">Empirical Telemetry</text>
-    <text x="14" y="68" class="card-desc" fill="#c9d1d9">Wireshark packet audit</text>
-    <text x="14" y="84" class="card-desc" fill="#c9d1d9">Thread-safety checks</text>
-    <text x="14" y="104" class="card-sub" fill="#8b949e">Physical runtime state</text>
+    <text x="14" y="46" class="card-title" fill="#58a6ff">Empirical Testing</text>
+    <text x="14" y="68" class="card-desc" fill="#c9d1d9">Runtime state inspection</text>
+    <text x="14" y="84" class="card-desc" fill="#c9d1d9">Diagnostic logs &amp; metrics</text>
+    <text x="14" y="104" class="card-sub" fill="#8b949e">Edge-case verification</text>
   </g>
 
   <!-- Arrow 4 -> 5 -->
@@ -84,10 +84,10 @@
   <g transform="translate(764, 56)">
     <rect width="156" height="122" rx="8" fill="#161b22" stroke="#2ea043" stroke-width="2"/>
     <text x="14" y="24" class="step-tag" fill="#3fb950">05 / PRODUCTION</text>
-    <text x="14" y="46" class="card-title" fill="#3fb950">Hardened Release</text>
-    <text x="14" y="68" class="card-desc" fill="#c9d1d9">Verified operational state</text>
-    <text x="14" y="84" class="card-desc" fill="#c9d1d9">Zero race conditions</text>
-    <text x="14" y="104" class="card-sub" fill="#8b949e">Documented delivery</text>
+    <text x="14" y="46" class="card-title" fill="#3fb950">Hardened Delivery</text>
+    <text x="14" y="68" class="card-desc" fill="#c9d1d9">Operational stability</text>
+    <text x="14" y="84" class="card-desc" fill="#c9d1d9">Verified data integrity</text>
+    <text x="14" y="104" class="card-sub" fill="#8b949e">Clean documentation</text>
   </g>
 
   <!-- Feedback Loop Path (From bottom of Card 4 back into Card 2) -->
@@ -96,7 +96,7 @@
 
   <!-- Feedback Tag Pill -->
   <g transform="translate(480, 216)">
-    <rect x="-95" y="-12" width="190" height="24" rx="12" fill="#161b22" stroke="#f85149" stroke-width="1.2"/>
-    <text x="0" y="4" text-anchor="middle" class="return-text">Defect Found: Re-Audit &amp; Trace</text>
+    <rect x="-105" y="-12" width="210" height="24" rx="12" fill="#161b22" stroke="#f85149" stroke-width="1.2"/>
+    <text x="0" y="4" text-anchor="middle" class="return-text">Defect Detected: Root-Cause Trace &amp; Fix</text>
   </g>
 </svg>

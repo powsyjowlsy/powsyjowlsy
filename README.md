@@ -21,17 +21,17 @@ Rather than focusing on rote syntax memorization, my practice centers on archite
 
 ### Engineering Workflow
 
-My development lifecycle operates as a closed-loop engineering pipeline, ensuring software is structurally verified against live system state and network telemetry before deployment:
+My development lifecycle operates as a closed-loop engineering pipeline, ensuring software is structurally verified against runtime execution and functional requirements before deployment:
 
 <p align="center">
   <img src="assets/engineering-workflow.svg" alt="Engineering Workflow Pipeline" width="100%" />
 </p>
 
-1. **Specification**: Define formal schemas, data contracts, and protocol boundaries before implementation.
-2. **Graph Audit**: Trace call hierarchies, dependency trees, and refactoring blast radiuses via AST analysis.
-3. **Synthesis**: Direct AI code generation under strict architectural constraints, eliminating premature assumptions.
-4. **Telemetry**: Validate logic against physical packet behavior in Wireshark, thread isolation, and runtime logs.
-5. **Production**: Deploy hardened releases only after all data contracts pass empirical verification.
+1. **Architecture & Design**: Define functional requirements, data schemas, and interface boundaries before writing code.
+2. **Structural Analysis**: Trace call hierarchies, dependency trees, and refactoring blast radiuses to preserve structural integrity.
+3. **Governed Synthesis**: Direct AI code generation under strict architectural rules, eliminating premature guessing.
+4. **Empirical Testing**: Validate behavior against runtime execution, diagnostic telemetry, and rigorous edge-case testing.
+5. **Hardened Delivery**: Deploy stable, well-documented software that meets all operational criteria.
 
 ---
 
