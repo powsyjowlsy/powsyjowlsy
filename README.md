@@ -24,7 +24,7 @@ Rather than focusing on rote syntax memorization, my practice centers on archite
 My development lifecycle operates as a closed-loop engineering pipeline, ensuring software is structurally verified against runtime execution and functional requirements before deployment:
 
 <p align="center">
-  <img src="assets/engineering-workflow-v2.svg" alt="Engineering Workflow Pipeline" width="100%" />
+  <img src="assets/engineering-workflow-v3.svg" alt="Engineering Workflow Pipeline" width="100%" />
 </p>
 
 1. **Architecture & Design**: Define functional requirements, data schemas, and interface boundaries before writing code.
