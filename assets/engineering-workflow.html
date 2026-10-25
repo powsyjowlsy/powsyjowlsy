@@ -37,7 +37,7 @@
 
     .eyebrow {
       font-family: var(--font-mono);
-      font-size: 0.68rem;
+      font-size: 0.75rem;
       font-weight: 500;
       letter-spacing: 0.18em;
       text-transform: uppercase;
@@ -68,102 +68,107 @@
     <h1>Closed-Loop Engineering Lifecycle</h1>
 
     <div class="diagram-container">
-      <svg viewBox="0 0 960 264" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="workflow-v3-title workflow-v3-desc">
-        <title id="workflow-v3-title">Closed-Loop Engineering Lifecycle</title>
-        <desc id="workflow-v3-desc">A five-stage sequential engineering pipeline featuring Architecture &amp; Design, Structural Analysis, Governed Synthesis, Empirical Verification, and Hardened Delivery, with a root-cause feedback loop on detected defects.</desc>
+      <svg viewBox="0 0 960 324" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="workflow-v4-title workflow-v4-desc">
+        <title id="workflow-v4-title">Closed-Loop Engineering Lifecycle</title>
+        <desc id="workflow-v4-desc">A five-stage sequential engineering pipeline featuring Architecture &amp; Design, Structural Analysis, Governed Synthesis, Empirical Verification, and Hardened Delivery, with a root-cause feedback loop on detected defects.</desc>
         <defs>
-          <pattern id="wf-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+          <pattern id="wf-dots-v4" width="22" height="22" patternUnits="userSpaceOnUse">
             <circle cx="11" cy="11" r="0.9" fill="rgba(245,245,245,0.08)"/>
           </pattern>
-          <marker id="wf-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <marker id="wf-arrow-v4" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
             <polygon points="0 0, 8 3, 0 6" fill="#8b949e"/>
           </marker>
-          <marker id="wf-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <marker id="wf-arrow-accent-v4" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
             <polygon points="0 0, 8 3, 0 6" fill="#f08a59"/>
           </marker>
         </defs>
 
         <!-- Outer Canvas Frame -->
         <rect width="100%" height="100%" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1"/>
-        <rect width="100%" height="100%" fill="url(#wf-dots)" opacity="0.55"/>
+        <rect width="100%" height="100%" fill="url(#wf-dots-v4)" opacity="0.55"/>
 
         <!-- Header Bar Inside Diagram -->
-        <text x="24" y="28" font-family="'Geist Mono', monospace" font-size="9" font-weight="500" letter-spacing="0.18em" fill="#8b949e">CLOSED-LOOP QUALITY PIPELINE</text>
-        <text x="936" y="28" font-family="'Geist Mono', monospace" font-size="9" font-weight="500" letter-spacing="0.12em" fill="#f08a59" text-anchor="end">EMPIRICAL VERIFICATION</text>
-        <line x1="24" y1="38" x2="936" y2="38" stroke="#30363d" stroke-width="1"/>
+        <text x="24" y="32" font-family="'Geist Mono', monospace" font-size="11" font-weight="500" letter-spacing="0.18em" fill="#8b949e">CLOSED-LOOP QUALITY PIPELINE</text>
+        <text x="936" y="32" font-family="'Geist Mono', monospace" font-size="11" font-weight="500" letter-spacing="0.12em" fill="#f08a59" text-anchor="end">EMPIRICAL VERIFICATION</text>
+        <line x1="24" y1="44" x2="936" y2="44" stroke="#30363d" stroke-width="1"/>
 
         <!-- Connectors (drawn before boxes in DOM order) -->
         <!-- Stage 1 -> 2 -->
-        <line x1="184" y1="126" x2="212" y2="126" stroke="#8b949e" stroke-width="1.2" marker-end="url(#wf-arrow)"/>
+        <line x1="188" y1="148" x2="212" y2="148" stroke="#8b949e" stroke-width="1.2" marker-end="url(#wf-arrow-v4)"/>
         <!-- Stage 2 -> 3 -->
-        <line x1="372" y1="126" x2="400" y2="126" stroke="#8b949e" stroke-width="1.2" marker-end="url(#wf-arrow)"/>
+        <line x1="376" y1="148" x2="400" y2="148" stroke="#8b949e" stroke-width="1.2" marker-end="url(#wf-arrow-v4)"/>
         <!-- Stage 3 -> 4 (into focal node) -->
-        <line x1="560" y1="126" x2="588" y2="126" stroke="#f08a59" stroke-width="1.4" marker-end="url(#wf-arrow-accent)"/>
+        <line x1="564" y1="148" x2="588" y2="148" stroke="#f08a59" stroke-width="1.5" marker-end="url(#wf-arrow-accent-v4)"/>
         <!-- Stage 4 -> 5 (out of focal node) -->
-        <line x1="748" y1="126" x2="776" y2="126" stroke="#f08a59" stroke-width="1.4" marker-end="url(#wf-arrow-accent)"/>
+        <line x1="752" y1="148" x2="776" y2="148" stroke="#f08a59" stroke-width="1.5" marker-end="url(#wf-arrow-accent-v4)"/>
 
         <!-- Feedback Loop: Card 4 bottom -> Card 2 bottom (r=8 Q-bezier bend) -->
-        <path d="M 668 188 V 216 Q 668 224 660 224 H 300 Q 292 224 292 216 V 192" 
-              fill="none" stroke="#f08a59" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#wf-arrow-accent)"/>
+        <path d="M 670 236 V 272 Q 670 280 662 280 H 302 Q 294 280 294 272 V 240" 
+              fill="none" stroke="#f08a59" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#wf-arrow-accent-v4)"/>
 
         <!-- Feedback Loop Label Mask & Text -->
-        <rect x="376" y="218" width="208" height="12" rx="2" fill="#0d1117"/>
-        <text x="480" y="227" fill="#f08a59" font-size="7.5" font-family="'Geist Mono', monospace" font-weight="500" letter-spacing="0.08em" text-anchor="middle">DEFECT DETECTED: ROOT-CAUSE FIX</text>
+        <rect x="360" y="272" width="240" height="16" rx="2" fill="#0d1117"/>
+        <text x="480" y="284" fill="#f08a59" font-size="9.5" font-family="'Geist Mono', monospace" font-weight="500" letter-spacing="0.08em" text-anchor="middle">DEFECT DETECTED: ROOT-CAUSE FIX</text>
 
-        <!-- Node Boxes (4px grid aligned) -->
+        <!-- Node Boxes (4px grid aligned: width 164, height 172) -->
         <!-- Stage 1 -->
         <g transform="translate(24, 64)">
-          <rect width="160" height="124" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-          <rect x="12" y="12" width="88" height="14" rx="2" fill="rgba(245,245,245,0.06)"/>
-          <text x="16" y="22" font-family="'Geist Mono', monospace" font-size="7.5" font-weight="500" letter-spacing="0.1em" fill="#8b949e">01 / DESIGN</text>
-          <text x="12" y="44" font-family="'Geist', sans-serif" font-size="12" font-weight="600" fill="#f0f6fc">Architecture &amp; Design</text>
-          <text x="12" y="66" font-family="'Geist Mono', monospace" font-size="8" fill="#8b949e">Functional requirements</text>
-          <text x="12" y="82" font-family="'Geist Mono', monospace" font-size="8" fill="#8b949e">Data models &amp; schemas</text>
-          <text x="12" y="98" font-family="'Geist Mono', monospace" font-size="8" fill="#6e7681">Interface contracts</text>
+          <rect width="164" height="172" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+          <rect x="12" y="12" width="96" height="18" rx="2" fill="rgba(245,245,245,0.06)"/>
+          <text x="16" y="25" font-family="'Geist Mono', monospace" font-size="9" font-weight="500" letter-spacing="0.1em" fill="#8b949e">01 / DESIGN</text>
+          <text x="12" y="52" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Architecture &amp;</text>
+          <text x="12" y="70" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">System Design</text>
+          <text x="12" y="100" font-family="'Geist', sans-serif" font-size="10.5" fill="#8b949e">Functional requirements</text>
+          <text x="12" y="120" font-family="'Geist', sans-serif" font-size="10.5" fill="#8b949e">Data models &amp; schemas</text>
+          <text x="12" y="140" font-family="'Geist', sans-serif" font-size="10.5" fill="#6e7681">Interface contracts</text>
         </g>
 
         <!-- Stage 2 -->
         <g transform="translate(212, 64)">
-          <rect width="160" height="124" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-          <rect x="12" y="12" width="84" height="14" rx="2" fill="rgba(245,245,245,0.06)"/>
-          <text x="16" y="22" font-family="'Geist Mono', monospace" font-size="7.5" font-weight="500" letter-spacing="0.1em" fill="#8b949e">02 / AUDIT</text>
-          <text x="12" y="44" font-family="'Geist', sans-serif" font-size="12" font-weight="600" fill="#f0f6fc">Structural Analysis</text>
-          <text x="12" y="66" font-family="'Geist Mono', monospace" font-size="8" fill="#8b949e">Dependency mapping</text>
-          <text x="12" y="82" font-family="'Geist Mono', monospace" font-size="8" fill="#8b949e">Call hierarchy &amp; impact</text>
-          <text x="12" y="98" font-family="'Geist Mono', monospace" font-size="8" fill="#6e7681">Pre-refactor blast radius</text>
+          <rect width="164" height="172" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+          <rect x="12" y="12" width="92" height="18" rx="2" fill="rgba(245,245,245,0.06)"/>
+          <text x="16" y="25" font-family="'Geist Mono', monospace" font-size="9" font-weight="500" letter-spacing="0.1em" fill="#8b949e">02 / AUDIT</text>
+          <text x="12" y="52" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Structural</text>
+          <text x="12" y="70" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Analysis &amp; Impact</text>
+          <text x="12" y="100" font-family="'Geist', sans-serif" font-size="10.5" fill="#8b949e">Dependency mapping</text>
+          <text x="12" y="120" font-family="'Geist', sans-serif" font-size="10.5" fill="#8b949e">Call hierarchy &amp; flow</text>
+          <text x="12" y="140" font-family="'Geist', sans-serif" font-size="10.5" fill="#6e7681">Blast radius isolation</text>
         </g>
 
         <!-- Stage 3 -->
         <g transform="translate(400, 64)">
-          <rect width="160" height="124" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-          <rect x="12" y="12" width="104" height="14" rx="2" fill="rgba(245,245,245,0.06)"/>
-          <text x="16" y="22" font-family="'Geist Mono', monospace" font-size="7.5" font-weight="500" letter-spacing="0.1em" fill="#8b949e">03 / SYNTHESIS</text>
-          <text x="12" y="44" font-family="'Geist', sans-serif" font-size="12" font-weight="600" fill="#f0f6fc">Governed Synthesis</text>
-          <text x="12" y="66" font-family="'Geist Mono', monospace" font-size="8" fill="#8b949e">Rule-constrained coding</text>
-          <text x="12" y="82" font-family="'Geist Mono', monospace" font-size="8" fill="#8b949e">Modular implementation</text>
-          <text x="12" y="98" font-family="'Geist Mono', monospace" font-size="8" fill="#6e7681">Zero premature guessing</text>
+          <rect width="164" height="172" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+          <rect x="12" y="12" width="112" height="18" rx="2" fill="rgba(245,245,245,0.06)"/>
+          <text x="16" y="25" font-family="'Geist Mono', monospace" font-size="9" font-weight="500" letter-spacing="0.1em" fill="#8b949e">03 / SYNTHESIS</text>
+          <text x="12" y="52" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Governed</text>
+          <text x="12" y="70" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Code Synthesis</text>
+          <text x="12" y="100" font-family="'Geist', sans-serif" font-size="10.5" fill="#8b949e">Rule-constrained code</text>
+          <text x="12" y="120" font-family="'Geist', sans-serif" font-size="10.5" fill="#8b949e">Modular components</text>
+          <text x="12" y="140" font-family="'Geist', sans-serif" font-size="10.5" fill="#6e7681">Zero premature guessing</text>
         </g>
 
         <!-- Stage 4 (Focal Accent Node) -->
         <g transform="translate(588, 64)">
-          <rect width="160" height="124" rx="6" fill="rgba(240,138,89,0.08)" stroke="#f08a59" stroke-width="1.4"/>
-          <rect x="12" y="12" width="118" height="14" rx="2" fill="rgba(240,138,89,0.20)"/>
-          <text x="16" y="22" font-family="'Geist Mono', monospace" font-size="7.5" font-weight="600" letter-spacing="0.1em" fill="#f08a59">04 / VERIFICATION</text>
-          <text x="12" y="44" font-family="'Geist', sans-serif" font-size="12" font-weight="600" fill="#f08a59">Empirical Testing</text>
-          <text x="12" y="66" font-family="'Geist Mono', monospace" font-size="8" fill="#f0f6fc">Runtime state inspection</text>
-          <text x="12" y="82" font-family="'Geist Mono', monospace" font-size="8" fill="#f0f6fc">Diagnostic telemetry</text>
-          <text x="12" y="98" font-family="'Geist Mono', monospace" font-size="8" fill="#8b949e">Edge-case verification</text>
+          <rect width="164" height="172" rx="6" fill="rgba(240,138,89,0.08)" stroke="#f08a59" stroke-width="1.5"/>
+          <rect x="12" y="12" width="128" height="18" rx="2" fill="rgba(240,138,89,0.20)"/>
+          <text x="16" y="25" font-family="'Geist Mono', monospace" font-size="9" font-weight="600" letter-spacing="0.1em" fill="#f08a59">04 / VERIFICATION</text>
+          <text x="12" y="52" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f08a59">Empirical</text>
+          <text x="12" y="70" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f08a59">Testing Gate</text>
+          <text x="12" y="100" font-family="'Geist', sans-serif" font-size="10.5" fill="#f0f6fc">Runtime state checks</text>
+          <text x="12" y="120" font-family="'Geist', sans-serif" font-size="10.5" fill="#f0f6fc">Diagnostic telemetry</text>
+          <text x="12" y="140" font-family="'Geist', sans-serif" font-size="10.5" fill="#8b949e">Edge-case verification</text>
         </g>
 
         <!-- Stage 5 -->
         <g transform="translate(776, 64)">
-          <rect width="160" height="124" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-          <rect x="12" y="12" width="112" height="14" rx="2" fill="rgba(245,245,245,0.06)"/>
-          <text x="16" y="22" font-family="'Geist Mono', monospace" font-size="7.5" font-weight="500" letter-spacing="0.1em" fill="#8b949e">05 / PRODUCTION</text>
-          <text x="12" y="44" font-family="'Geist', sans-serif" font-size="12" font-weight="600" fill="#f0f6fc">Hardened Delivery</text>
-          <text x="12" y="66" font-family="'Geist Mono', monospace" font-size="8" fill="#8b949e">Operational stability</text>
-          <text x="12" y="82" font-family="'Geist Mono', monospace" font-size="8" fill="#8b949e">Verified data integrity</text>
-          <text x="12" y="98" font-family="'Geist Mono', monospace" font-size="8" fill="#6e7681">Clean documentation</text>
+          <rect width="164" height="172" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+          <rect x="12" y="12" width="120" height="18" rx="2" fill="rgba(245,245,245,0.06)"/>
+          <text x="16" y="25" font-family="'Geist Mono', monospace" font-size="9" font-weight="500" letter-spacing="0.1em" fill="#8b949e">05 / PRODUCTION</text>
+          <text x="12" y="52" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Hardened</text>
+          <text x="12" y="70" font-family="'Geist', sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Release Delivery</text>
+          <text x="12" y="100" font-family="'Geist', sans-serif" font-size="10.5" fill="#8b949e">Operational stability</text>
+          <text x="12" y="120" font-family="'Geist', sans-serif" font-size="10.5" fill="#8b949e">Verified data integrity</text>
+          <text x="12" y="140" font-family="'Geist', sans-serif" font-size="10.5" fill="#6e7681">Clean documentation</text>
         </g>
       </svg>
     </div>
